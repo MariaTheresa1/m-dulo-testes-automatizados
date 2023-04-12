@@ -60,4 +60,16 @@ class CalculadoraTest {
         Assertions.assertTrue(resultado < 0);
     }
 
+    @Test
+    public void quandoDivisaoPorZero(){
+        int primeiro = 5;
+        int segundo = 0;
+
+        Calculadora calculadora = new Calculadora();
+
+        assertThrows(ArithmeticException.class, () -> {
+            calculadora.dividir(primeiro, segundo);
+        });
+    }
+    // criar os testes possivés para o método fazerLogin
 }
