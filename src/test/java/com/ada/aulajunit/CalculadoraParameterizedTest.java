@@ -6,7 +6,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 
 public class CalculadoraParameterizedTest {
 
-    
+
 
     @ParameterizedTest
     public void testeSoma(int primeiro, int segundo, int expected) {
